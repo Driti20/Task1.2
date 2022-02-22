@@ -1,11 +1,88 @@
 .App {
-  text-align: center;
+  align-items: center;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+
+
+
 }
+.card{
+  box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 5%;
+  flex:0 0 29%;
+  margin: 25px;
+  align-items: center;
+  display: flex;
+  height: 430px;
+  display: block;
+  padding: 30px;
+}
+.card>*{
+  margin-top: 10px;
+}
+.info{
+  display: flex;
+  align-items: center;
+}
+.info>*{
+  flex: auto;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  
+}
+.info>*>*{
+  margin: 0;
+}
+.status{
+  text-align: center;
+  padding: 5px;
+  width: auto;
+  border-radius: 5px;
+  color: white;
+}
+.statusText{
+  margin: 0;
+}
+h4{
+  margin: 0;
+}
+.button{
+  box-sizing: border-box;
+  border: 1px solid blue;
+  text-align: center;
+  color: blue;
+  padding: 20px 20px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  margin-right: 100px;
+}
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+@media only screen and (max-width:1220px) {
+  .card{
+    flex:0 0 28%;
+  }
+}
+@media only screen and (max-width:1030px) {
+  .card{
+    flex:0 0 40%;
+  }
+}
+@media only screen and (max-width:690px) {
+  .card{
+    flex:0 0 90%;
+  }
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -22,6 +99,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.description{
+  height: 200px;
+  color: rgb(177, 177, 177);
 }
 
 .App-link {
