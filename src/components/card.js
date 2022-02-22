@@ -7,7 +7,7 @@ const Card = (props) => (
     </div>
     <div className="info">
       <div className="status" style={{backgroundColor:props.color}}><p className="statusText">{props.status}</p></div>
-      <div><img src={props.img}/></div>
+      <div><img src={props.img} alt="imege"/></div>
       <div><h4>{props.name}</h4></div>    
     </div>
     <div className="description">{props.description}</div>
