@@ -60,12 +60,6 @@ h4{
   border-radius: 50px;
   margin-right: 100px;
 }
-
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 @media only screen and (max-width:1220px) {
   .card{
     flex:0 0 28%;
